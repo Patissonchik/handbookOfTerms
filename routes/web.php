@@ -14,7 +14,7 @@ use App\Http\Controllers\TermController;
 |
 */
 
-#Route::get('/', 'TermController@index')->name('terms.index');
+
 Route::get('/', [TermController::class, 'index'])->name('terms.index');
 Route::get('/terms/create', [TermController::class, 'create'])->name('terms.create');
 Route::get('/terms/{term}/edit', [TermController::class, 'edit'])->name('terms.edit');
@@ -31,6 +31,3 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
