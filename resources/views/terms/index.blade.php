@@ -3,6 +3,7 @@
 @section('content')
     <div class="container">
         <h1>Список записей справочника</h1>
+        
         <table class="table">
             <thead>
                 <tr>
